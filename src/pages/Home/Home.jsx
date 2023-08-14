@@ -1,21 +1,48 @@
+import React, { useState, useEffect } from "react";
+import LogementsList from '../../components/Logements/LogementList';
 
 const Home = () => {
+  const urlAPI = "http://localhost:3000/api/estateData.json";
 
-    return (
-        <>
-        <div className="container">
-            <div className="banner">
-                <h1>Chez vous, partout et ailleurs</h1>
-                <img src='' alt="Fôret et mer" className="banner__img"/>
-            </div>
+  const [logements, setLogements] = useState([]);
+
+  //replace componentDidMonth
+  useEffect(() => {
+    fetchLogements();
+  }, []);
+
+  //Get the logements from API
+  const fetchLogements = async () => {
+    const response = await fetch(`${urlAPI}`);
+    const data = await response.json();
+    setLogements(data);
+  };
+
+  console.log(logements);
+
+  return (
+    <>
+      <div className="container">
+        <div className="banner">
+          <h1>Chez vous, partout et ailleurs</h1>
+          <img
+            src= {require('../../assets/images/photos/banner.png')}
+            alt="Fôret et mer"
+            className="banner__img"
+          />
         </div>
-        <div className="mb-1rem"></div>
+      </div>
+      <div className="mb-1rem"></div>
 
-        <main className="container">
-            <div className="logements">Home PAge</div>
-        </main>
-        </>
-    )
-}
+      <main className="container">
+      <div className="logements row">{
+                logements.map(( logement, index ) => (
+                    <LogementsList logement={logement} key={index} index={index} />
+                ))
+            }</div>
+      </main>
+    </>
+  );
+};
 
 export default Home;

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Header() {
   return (
     <header className="header">
@@ -36,12 +38,9 @@ function Header() {
           </div>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-              <a href="#" class="nav-item nav-link">
-                Accueil
-              </a>
-              <a href="#" class="nav-item nav-link">
-                A propos
-              </a>
+            <Link to="/">Accueil  </Link>
+            <Link to="/about">A propos de</Link>
+
             </div>
           </div>
         </div>
