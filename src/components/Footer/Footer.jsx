@@ -1,9 +1,9 @@
 function Footer() {
   return (
     <footer className="footer position-absolute">
-      <div class="container">
-        <footer class="py-3 my-4">
-          <p class="text-center">
+      <div className="container">
+        <footer className="py-3 my-4">
+          <p className="text-center">
             <svg
               className="footer__logo"
               width="122"
@@ -35,7 +35,7 @@ function Footer() {
               />
             </svg>
           </p>
-          <p class="text-center text-light">© 2020 Kasa. All rights reserved</p>
+          <p className="text-center text-light">© 2020 Kasa. All rights reserved</p>
         </footer>
       </div>
     </footer>

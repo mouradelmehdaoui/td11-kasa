@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <header className="header">
-      <nav class="navbar navbar-expand-lg w-100">
-        <div class="container-fluid">
-          <div class="navbar-header">
+      <nav className="navbar navbar-expand-lg w-100">
+        <div className="container-fluid">
+          <div className="navbar-header">
             <svg
               className="header__logo"
               width="211"
@@ -36,8 +36,8 @@ function Header() {
               />
             </svg>
           </div>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto">
+          <div className="collapse navbar-collapse" id="navbarCollapse">
+            <div className="navbar-nav ms-auto">
             <Link to="/">Accueil  </Link>
             <Link to="/about">A propos de</Link>
 

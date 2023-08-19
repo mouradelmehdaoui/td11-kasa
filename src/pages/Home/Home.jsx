@@ -35,7 +35,7 @@ const Home = () => {
       <div className="mb-1rem"></div>
 
       <main className="container">
-      <div className="logements row">{
+      <div className="logements ">{
                 logements.map(( logement, index ) => (
                     <LogementsList logement={logement} key={index} index={index} />
                 ))
