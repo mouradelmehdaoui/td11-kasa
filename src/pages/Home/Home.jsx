@@ -18,8 +18,6 @@ const Home = () => {
     setLogements(data);
   };
 
-  console.log(logements);
-
   return (
     <>
       <div className="container">

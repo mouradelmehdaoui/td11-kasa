@@ -7,17 +7,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const About = () => {
 
   const [openId, setOpenId] = useState(null);
+
+  console.log("openIdBefore = ",openId);
+
   const handleToggle = (itemId) => {
+
+    console.log("openIdAfterClick = ",openId);
+    console.log("itemId = ",itemId);
     if (openId === itemId) {
       setOpenId(null);
+      console.log('je suis egaliter openid et item id');
     } else {
       setOpenId(itemId);
+      console.log('je suis ds set ItemID');
     }
   };
 
   return (
-    <div className='container'>
- 
+    <div className="container feature-list">
       <ul>
         {items.map(item => (
           <li key={item.id}>
@@ -26,37 +33,14 @@ const About = () => {
               onClick={() => handleToggle(item.id)}
               aria-controls={`collapse-${item.id}`}
               aria-expanded={openId === item.id}
-              className="btn-block text-left"
-              style={{
-                backgroundColor: 'orange',
-                color: 'white',
-                marginBottom: '1rem',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                paddingLeft: '1rem',
-                paddingRight: '1rem',
-                textDecoration: 'none',
-                width: '1023px',
-                height: '47px', // Set height
-                top: '776px', // Set top position
-                left: '208px', // Set left position
-                borderRadius: '10px', // Set border radius
-                
-              }}
+              className="btn-block text-left feature-button"
             >
               {item.title}
               <FontAwesomeIcon icon={openId === item.id ? faArrowUp : faArrowDown} />
             </Button>
             <Collapse in={openId === item.id}>
-              <div id={`collapse-${item.id}`}>
-                <p
-                style={{
-                  width: '1023px', // Set width
-                  height: '184px', // Set height
-                  top: '408px', // Set top position
-                  left: '208px', // Set left position
-                }}>{item.text}</p>
+              <div id={`collapse-${item.id}`} className="feature-text">
+                <p>{item.text}</p>
               </div>
             </Collapse>
           </li>

@@ -319,4 +319,30 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.feature-list .feature-button {
+  background-color: #FF6060;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  width: 1023px;
+  height: 47px;
+  top: 776px;
+  left: 208px;
+  border-radius: 10px;
+}
+.feature-list .feature-button .svg-inline--fa {
+  margin-left: 1rem;
+}
+.feature-list .feature-text {
+  width: 1023px;
+  height: 184px;
+  top: 408px;
+  left: 208px;
 }/*# sourceMappingURL=main.css.map */
