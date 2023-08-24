@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 //CSS Styles
 import "./styles/sass/main.css";
+import 'semantic-ui-css/semantic.min.css'
 
 //Components
 import Header from "./components/Header/Header";

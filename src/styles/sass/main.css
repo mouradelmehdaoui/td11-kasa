@@ -229,6 +229,8 @@ button {
 }
 .logements__main__img {
   border-radius: 10px;
+  width: 340px;
+  height: 340px;
 }
 .logements__title {
   position: absolute;
@@ -343,6 +345,10 @@ button {
 .feature-list .feature-text {
   width: 1023px;
   height: 184px;
-  top: 408px;
-  left: 208px;
+  background-color: #F6F6F6;
+}
+
+.nav-link {
+  font-size: 24px;
+  color: #FF6060 !important;
 }/*# sourceMappingURL=main.css.map */
