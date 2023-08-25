@@ -1,18 +1,22 @@
-import { React, useEffect, useContext } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useContext} from "react";
+import { useParams, useNavigate } from "react-router-dom"; // Import useHistory
 import { Context } from "../../service/Context";
 
 const LogementDetail = () => {
   const { id } = useParams();
   const logementId = id;
+  const navigate = useNavigate(); // Initialize the useHistory hook
 
-  const logements = useContext(Context); // Use the useContext hook to access the context data
+  const logements = useContext(Context);
 
   const logement = logements.find((logement) => logement.id === logementId);
 
-
-  console.log(logements);
-  console.log(logementId);
+  useEffect(() => {
+    // Check if logement is not found and redirect to 404 page
+    if (!logement) {
+      navigate("/Error404"); 
+    }
+  }, [logement, navigate]);
 
   if (!logement) {
     return <div>Loading...</div>;

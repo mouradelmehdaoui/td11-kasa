@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="container header w-auto p-3">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white">
           <svg
             className="header__logo"
             width="211"
@@ -34,7 +34,7 @@ function Header() {
             />
           </svg>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -42,19 +42,19 @@ function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div
-          class="collapse navbar-collapse justify-content-end"
+          className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item me-5 ">
-              <Link to="/" class="nav-link">Accueil </Link>
+          <ul className="navbar-nav">
+            <li className="nav-item me-5 ">
+              <Link to="/" className="nav-link">Accueil </Link>
             </li>
-            <li class="nav-item">
-              <Link to="/about" class="nav-link">A propos de</Link>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link">A propos de</Link>
             </li>
           </ul>
         </div>
