@@ -41,6 +41,7 @@
     animation-fill-mode: both;
 
     &__main {
+        overflow: hidden;
         position: relative;
         display: flex;
         align-items: flex-end;
@@ -49,17 +50,30 @@
         max-width: 28%;
         padding-top: 2rem;
         padding-bottom: 1rem;
-
+        color: var(--text-color-secondary);
+        aspect-ratio: 1/1;
+        width: 100%;
+    
         &:hover {
             transform: scale(1.05);
         }
-
+    
+        &::before {
+            content: "";
+            @include absolute-center;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent); /* Adjust the gradient as needed */
+            aspect-ratio: 1/1;
+            width: 101%;
+        }
+    
         &__img {
             border-radius: 10px;
             width: 340px;
-            height: 340px
+            height: 340px;
         }
     }
+    
+    
 
     &__title {
         position: absolute;

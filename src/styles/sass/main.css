@@ -215,6 +215,7 @@ button {
   animation-fill-mode: both;
 }
 .logements__main {
+  overflow: hidden;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -223,9 +224,22 @@ button {
   max-width: 28%;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  color: var(--text-color-secondary);
+  aspect-ratio: 1/1;
+  width: 100%;
 }
 .logements__main:hover {
   transform: scale(1.05);
+}
+.logements__main::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent); /* Adjust the gradient as needed */
+  aspect-ratio: 1/1;
+  width: 101%;
 }
 .logements__main__img {
   border-radius: 10px;

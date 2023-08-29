@@ -25,7 +25,7 @@ const About = () => {
       <div className="container">
         <div className="banner">
           <img
-            src= {require('../../assets/images/photos/banner-about.png')}
+            src={`${window.location.origin}/assets/images/photos/banner-about.png`}
             alt="Montagne"
             className="banner__img"
           />

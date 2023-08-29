@@ -12,6 +12,7 @@ import { Provider } from "./service/Context";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
