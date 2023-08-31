@@ -1,0 +1,14 @@
+@use "../Utils/" as *;
+
+.description,
+.equipement {
+  max-width: 400px !important;
+  margin: 0 auto !important; // Center the container horizontally
+
+  .feature-button, .feature-list, .feature-text {
+    width: 582px;
+    height: 52px;
+    text-align: center;
+  }
+
+}

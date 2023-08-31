@@ -1,6 +1,9 @@
+@forward "./Utils/mixins";
+
 //Utils other than variabls, maps and mixins
 @forward "./Utils/js-classes";
 @forward "./Utils/keyframes";
+
 
 //Base
 @forward "./Base/normalization";
@@ -11,5 +14,14 @@
 @forward "./Pages/Home";
 @forward "./Pages/About";
 @forward "./Layout/Header";
+@forward "./Components/Carousel";
+@forward "./Components/Card";
+@forward "./Components/Banner";
+@forward "./Components/Collapse";
+@forward "./Components/Carousel";
+@forward "./Components/Tag";
+@forward "./Components/Rate";
+@forward "./Components/Host";
+
 
 

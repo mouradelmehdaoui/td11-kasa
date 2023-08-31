@@ -1,61 +1,18 @@
-//SASS color variables
-$bg-color-primary: #FF6060;
+$primary-color: #ff6060;
+$secondary-color: #f7f7f7;
+$tertiary-color: #FFFFFF;
 
-$text-color-primary: #FF6060;
-$text-color-primary--hover: #ff2e2e;
+$footer-color: #000000;
+$background-color: rgba(0, 0, 0, 0.3);
+$linear-cards: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
-$text-color-secondary: white;
+$about-background: $background-color url(../assets/images/about-background.png);
 
-$star-color-full: #FF6060;
+$about-background-mobile: $background-color url(../assets/images/mobile-about-background.png);
 
-$star-color-empty: #E3E3E3;
+$banner-background: $background-color url(../assets/images/background-banner.png);
 
-$selection-bg-color: #009d9d;
-$selection-color: black;
+$breakpoint-desktop: 769px;
 
-$transparent-grey: rgba(128, 128, 128, 0.5);
-$transparent-black: rgba(0, 0, 0, 0.55);
-
-$page-bg-color: white;
-
-$footer-bg-color: black;
-
-$scrollbar-track-color: #e4e4e4;
-
-
-$scrollbar-thumb-color: rgb(159, 159, 159);
-$scrollbar-thumb-color--hover: darken($scrollbar-thumb-color, 10);
-$scrollbar-thumb-color--active: darken($scrollbar-thumb-color, 20);
-
-
-
-//CSS variables
-:root {
-    //Color variables
-    --bg-color-primary: #{$bg-color-primary};
-    --text-color-primary: #{$text-color-primary};
-    --text-color-primary--hover: #{$text-color-primary--hover};
-
-    --text-color-secondary: #{$text-color-secondary};
-
-    --selection-bg-color: #{$selection-bg-color};
-    --selection-color: #{$selection-color};
-
-    --star-color-full: #{$star-color-full};
-    --star-color-empty: #{$star-color-empty};
-
-    --transparent-grey: #{$transparent-grey};
-    --transparent-black: #{$transparent-black};
-
-    --page-bg-color: #{$page-bg-color};
-    --footer-bg-color: #{$footer-bg-color};
-
-    --scrollbar-track-color: #{$scrollbar-track-color};
-
-    --scrollbar-thumb-color: #{$scrollbar-thumb-color};
-    --scrollbar-thumb-color--hover: #{$scrollbar-thumb-color--hover};
-    --scrollbar-thumb-color--active: #{$scrollbar-thumb-color--active};
-
-    //Pixel variables
-
-}
+$wmin: 375px;
+$wmax: 768px;
