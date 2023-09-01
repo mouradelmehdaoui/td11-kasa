@@ -254,9 +254,13 @@ main {
   }
 }
 
-.nav-link {
-  font-size: 24px;
-  color: #ff6060 !important;
+.collapse-fiche-container {
+  display: flex; /* Set the container as a flex container */
+  width: 100%;
+}
+.collapse-fiche-container .description,
+.collapse-fiche-container .equipement {
+  width: 582px !important;
 }
 
 #carrousel-container {
@@ -793,4 +797,101 @@ main {
     flex-direction: row;
     align-items: flex-end;
   }
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 769px) {
+  .nav-header {
+    text-transform: none;
+  }
+}
+.nav-header_link-home, .nav-header_link-about {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: right;
+  line-height: 142.6%;
+  color: #ff6060 !important;
+  text-decoration: none;
+  padding-left: 0.8rem;
+}
+@media screen and (min-width: 769px) {
+  .nav-header_link-home, .nav-header_link-about {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: right;
+    line-height: 142.6%;
+    padding-left: 3.5rem;
+  }
+}
+.nav-header_link-home:hover, .nav-header_link-home:focus, .nav-header_link-about:hover, .nav-header_link-about:focus {
+  text-decoration-line: underline;
+}
+
+.headerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+}
+@media screen and (min-width: 769px) {
+  .headerWrap {
+    margin: 40px 100px 49px 100px;
+  }
+}
+.headerWrap__fig {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  width: 9rem;
+}
+@media screen and (min-width: 769px) {
+  .headerWrap__fig {
+    width: 13.2rem;
+  }
+}
+.headerWrap__fig img {
+  width: 100%;
+}
+
+.foot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 209px;
+  margin-top: 5%;
+  background-color: #000000;
+  flex-direction: column;
+}
+.foot-container__text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 4% 0 3% 0;
+}
+@media screen and (min-width: 769px) {
+  .foot-container__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
+}
+.foot-container img {
+  margin-top: 2%;
+  width: 122px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */

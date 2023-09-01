@@ -13,7 +13,10 @@
 @forward "./Pages/Error404";
 @forward "./Pages/Home";
 @forward "./Pages/About";
-@forward "./Layout/Header";
+@forward "./Pages/Logement";
+
+
+// Components
 @forward "./Components/Carousel";
 @forward "./Components/Card";
 @forward "./Components/Banner";
@@ -22,6 +25,13 @@
 @forward "./Components/Tag";
 @forward "./Components/Rate";
 @forward "./Components/Host";
+@forward "./Components/Navigation";
+
+//Layout 
+
+@forward "./Layout/Header";
+@forward "./Layout/Footer";
+
 
 
 

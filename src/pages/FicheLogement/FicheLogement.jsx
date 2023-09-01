@@ -16,8 +16,6 @@ export default function FicheLogement() {
 	useEffect(() => {
 		const getData = async () => {
 			const res = await axios.get(`${window.location.origin}/api/estateData.json`);
-
-			console.log(res);
 			const picked = res.data.find(({ id }) => id === params.id);
 			res.data.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
@@ -67,12 +65,17 @@ export default function FicheLogement() {
 						</div>
 					</div>
 				</section>
-				<div className="collapse-fiche-container">
+				<div className="row collapse-fiche-container">
+
+					<div className="col-6 description">
 					<Collapse
 						aboutTitle="Description"
 						aboutText={pickedAppart.description}
 					/>
+					</div>
+					<div className="col-6 equipement">
 					<Collapse aboutTitle="Équipements" aboutText={equip} />
+					</div>
 				</div>
 			</div>
 		)

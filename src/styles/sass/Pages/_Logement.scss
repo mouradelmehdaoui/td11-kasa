@@ -1,14 +1,14 @@
 @use "../Utils/" as *;
 
-.description,
-.equipement {
-  max-width: 400px !important;
-  margin: 0 auto !important; // Center the container horizontally
 
-  .feature-button, .feature-list, .feature-text {
-    width: 582px;
-    height: 52px;
-    text-align: center;
+.collapse-fiche-container {
+
+  display: flex; /* Set the container as a flex container */
+  width: 100%;
+  
+  .description,
+  .equipement {
+    width: 582px!important;
+   
   }
-
 }
