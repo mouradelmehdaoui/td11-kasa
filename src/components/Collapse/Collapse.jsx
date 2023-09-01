@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react"; //import des hooks de base 
 export default function Collapse(props) {
 
 
-	console.log(props);
 	const [toggle, setToggle] = useState(false); // je definis le state du toggle (et false par défaut)
 	const [heightEl, setHeightEl] = useState(); // je definis le state de la hauteur du collapse
 

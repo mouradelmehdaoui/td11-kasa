@@ -5,6 +5,7 @@
 
     &__text {
         text-align: center;
+        color: $primary-color !important
     }
 
 
@@ -27,11 +28,11 @@
 
     &__link {
         text-decoration: underline;
-        color: var(--text-color-primary);
+        color: $primary-color !important;
         margin-bottom: 125px;
 
         &:hover {
-            color: var(--text-color-primary--hover)
+            color: $primary-color !important
         }
 
         @include mobile-only {
